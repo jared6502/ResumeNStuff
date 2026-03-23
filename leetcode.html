@@ -1,0 +1,133 @@
+<!--
+
+Copyright 2026 Jared Robert Wright
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+this list of conditions and the following disclaimer in the documentation
+and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its contributors
+may be used to endorse or promote products derived from this software without
+specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Jared Wright - LeetCode Solutions</title>
+		<link rel="stylesheet" href="style.css" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="page_header" id="top_of_page">
+			<header>
+				<span class="header_span">
+					<img id="header_pic" src="me.jpeg" alt="Picture of Jared Wright" />
+				</span>
+				<span class="header_span" id="header_text">
+					<h1>Jared Robert Wright</h1>
+					<h2>Industrial Automation, Robotics, and IT Professional</h2>
+					<p id="header_blurb">
+						Provider of robust and reliable machine control systems since 2013.
+					</p>
+				</span>
+			</header>
+		</div>
+		<div>
+			<nav class="navbar">
+				<ul>
+ 					<li><a href="cover-letter.html">Cover Letter</a></li>
+ 					<li><a href="resume.html">Resume</a></li>
+ 					<li><a href="leetcode.html" class="current_page">LeetCode Solutions</a></li>
+				</ul>
+			</nav>
+		</div>
+		<main class="content">
+			<span>
+				<div>
+					<article>
+						<h1>My LeetCode Problem Solutions</h1>
+						
+						This is a repository containing all of the solutions I have submitted to the LeetCode site. They are not necessarily the best possible solutions and may have optimizations that could be made to achieve a better result, but they all pass with correct output. This document contains a list of all entries with an indicator of whether or not they pass all test cases. The entries on the LeetCode website are split based on difficulty, and that is how they will be classified here as well. I will also give my own assessment of difficulty.
+						
+						<h2>Difficulty Scale</h2>
+						
+						I will be using a scale from 1 to 10 to give my own rating of difficulty. They will roughly correspond to these levels:
+						<ul>
+							<li>1/10-4/10 - Perfectly reasonable to use for coding tests in job interviews, even short ones - trivial tasks, easier stuff, rated mostly on expected time to spend writing it</li>
+							<li>5/10 - More work, reasonable for up to a 1 hour coding test.</li>
+							<li>6/10 - Still reasonable for a 1-2 hour test.</li>
+							<li>7/10 - Reasonable for a take-home type of coding test, not really suitable for a live interview coding test.</li>
+							<li>8/10 - Give the person taking the test at least a day.</li>
+							<li>9/10 - Give them 2-3 days.</li>
+							<li>10/10 - If this isn't directly tied to work that will be performed, don't use these.</li>
+						</ul>
+						
+						With any of these problems, I strongly recommend, when using them for assessing candidates for employment, that you either choose challenges that are applicable to most software development tasks or that you pick ones that are directly relevant to the specific job for which candidates are being hired.
+						
+						<h2>Table of Contents</h2>
+						<div class="table_of_contents">
+							<ol>
+								<li><a href="#easy">Easy Solutions</a></li>
+								<li><a href="#medium">Medim Solutions</a></li>
+								<li><a href="#hard">Hard Solutions</a></li>
+							</ol>
+						</div>
+						
+						<h1>Solutions</h1>
+						
+						<section id="easy">
+							<h2>Easy</h2>
+							<table>
+								<tr><th>Problem</th><th>Solution</th><th>My Difficulty Rating</th><th>Description</th><th>My Opinion</th></tr>
+								<tr><td></td><td></td><td></td><td></td><td></td></tr>
+							</table>
+						</section>
+						<section id="medium">
+							<h2>Medium</h2>
+							<table>
+								<tr><th>Problem</th><th>Solution</th><th>My Difficulty Rating</th><th>Description</th><th>My Opinion</th></tr>
+								<tr><td></td><td></td><td></td><td></td><td></td></tr>
+							</table>
+						</section>
+						<section id="hard">
+							<h2>Hard</h2>
+							<table>
+								<tr><th>Problem</th><th>Solution</th><th>Description</th><th>My Difficulty Rating</th><th>My Opinion</th></tr>
+								<tr><td>4. Median of Two Sorted Arrays</td><td><a href="hard/4.cpp">4.cpp</a></td><td>Find the median value of two sorted lists of numbers.</td><td>7/10</td><td>I spent time trying to do this without actually merging the lists, and it can be done, but I eventually just gave up and created a new list from the originals, which was way easier.</td></tr>
+								<tr><td>32. Longest Valid Parentheses</td><td><a href="hard/32.cpp">32.cpp</a></td><td>Find the longest substring containing valid sets of matched opening and closing parentheses.</td><td>9/10</td><td>I had a harder time with this than I thought I would. While this solution works it just barely completes within the time limit. It could be optimized but I really don't want to spend any more time on it.</td></tr>
+								<tr><td>42. Trapping Rain Water</td><td><a href="hard/42.cpp">42.cpp</a></td><td>Calculate the amount of rainwater that would be retained by a given elevation map.</td><td>5/10</td><td>This one is pretty well defined and straightforward, making it relatively quick to make a working solution.</td></tr>
+								<tr><td>65. Valid Number</td><td><a href="hard/65.cpp">65.cpp</a></td><td>Parse strings to determine whether or not they represent a valid number.</td><td>5/10</td><td>I thought this was a fairly straightforward task and was able to make a working solution pretty quickly.</td></tr>
+							</table>
+						</section>
+					</article>
+				</div>
+			</span>
+		</main>
+		<br>
+		<hr>
+		<br>
+		<footer class="page_bottom">
+			<a href="#top_of_page">Return to the top of the page</a>
+		</footer>
+	</body>
+</html>

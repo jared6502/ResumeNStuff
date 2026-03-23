@@ -1,0 +1,289 @@
+/*
+
+Copyright 2026 Jared Robert Wright
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+this list of conditions and the following disclaimer in the documentation
+and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its contributors
+may be used to endorse or promote products derived from this software without
+specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+*/
+
+/*
+
+global formatting for whole document
+
+*/
+
+/* default font for all elements */
+* {
+	font-family: "Courier New", monospace;
+}
+
+/* default colors and margins for specific elements */
+h1 {
+	text-align: left;
+	color: rgb(255,255,0);
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 24px;
+	text-align: left;
+	color: rgb(255,0,0);
+}
+
+h3 {
+	font-size: 20px;
+	text-align: left;
+	color: rgb(255,127,0);
+}
+
+body {
+	background-color: rgb(0,0,0);
+}
+
+p {
+	margin: 4px, 4px, 4px, 4px;
+}
+
+/* brackets to help identify links visually */
+a::before {
+	content: "[";
+}
+
+a::after {
+	content: "]"
+}
+
+/* unordered list style - disc, square, diamond */
+
+ul li {
+	list-style-type: disc;
+	list-style-image: none;
+	list-style-position: outside;
+}
+
+ul li li {
+	list-style-type: square;
+	list-style-image: none;
+	list-style-position: outside;
+}
+
+ul li li li {
+	list-style-type: none;
+	list-style-image: url("diamond.png");
+	list-style-position: outside;
+}
+
+ul li li li li {
+	list-style-type: none;
+	list-style-image: url("hollow_diamond.png");
+	list-style-position: outside;
+}
+
+/* ordered list style - numbers, letters, roman numerals */
+
+ol li {
+	list-style-type: decimal;
+	list-style-image: none;
+	list-style-position: outside;
+}
+
+ol li li {
+	list-style-type: upper-alpha;
+	list-style-image: none;
+	list-style-position: outside;
+}
+
+ol li li li {
+	list-style-type: lower-roman;
+	list-style-image: none;
+	list-style-position: outside;
+}
+
+/*
+
+header formatting
+
+*/
+
+.page_header {
+	width:100%;
+	overflow:visible;
+	height: 200px;
+}
+
+.page_header header {
+	height: 100%;
+}
+
+.header_span {
+	height: 100%;
+	display: inline;
+}
+
+#header_pic {
+	width: 100px;
+	height: 167px;
+	float: left;
+	padding-right: 10px;
+}
+
+#header_text {
+	height: 100%;
+	text-align: left;
+	float: left;
+}
+
+#header_blurb {
+	color: rgb(0,255,0);
+}
+
+/*
+
+navigation bar formatting
+
+*/
+
+/* main nav area */
+.navbar {
+	text-align: left;
+	display: block;
+	color: rgb(127,127,127);
+	background-color: rgb(0,0,127);
+	padding: 2px 2px;
+	font-size: 20px;
+}
+
+/* nav bar links - default formatting */
+.navbar a {
+	color: rgb(0,255,255);
+	background-color: rgb(0,0,127);
+	border: 2px, 2px, 2px, 2px;
+	text-decoration: none;
+}
+
+/* nav bar links - change color on hover to highlight current selection */
+.navbar a:hover {
+	color: rgb(255,255,255);
+	background-color: rgb(127,127,127);
+}
+
+/* nav bar links - use this to highlight the current page we're on */
+.navbar a.current_page {
+	color: rgb(0,0,0);
+	background-color: rgb(0,255,255);
+}
+
+/* navbar link list formatting */
+.navbar ul {
+	list-style-type: none;
+	margin: 2px;
+	padding: 2px;
+}
+
+.navbar li {
+	display: inline;
+}
+
+/*
+
+page content formatting
+
+*/
+
+/* default element formatting for content area */
+.content {
+	color: rgb(0,255,0);
+	background-color: rgb(0,0,0);
+}
+
+/* set link colors for content area */
+.content a:link {
+	color: rgb(0,255,255);
+	background-color: rgb(0,0,0);
+}
+
+.content a:visited {
+	color: rgb(255,0,255);
+	background-color: rgb(0,0,0);
+}
+
+.content p {
+	margin: 4px, 4px, 4px, 4px;
+	text-indent: 32px;
+}
+
+.content table {
+	border: 2px solid rgb(0,127,127);
+	padding: 4px, 4px, 4px, 4px;
+}
+
+.content table caption {
+	text-align: center;
+	border: 2px solid rgb(0,127,127);
+	padding: 4px, 4px, 4px, 4px;
+}
+
+.content table td {
+	text-align: left;
+	border: 2px solid rgb(127,127,0);
+	padding: 4px, 4px, 4px, 4px;
+}
+
+.table_of_contents {
+	border: 2px solid rgb(255,255,255);
+}
+
+/*
+
+footer formatting
+
+*/
+
+.page_bottom {
+	text-align: left;
+	display: block;
+	color: rgb(255,255,255);
+	background-color: rgb(0,0,127);
+	padding: 2px 2px;
+	font-size: 20px;
+}
+
+.page_bottom a {
+	color: rgb(0,255,255);
+	background-color: rgb(0,0,127);
+	border: 2px, 2px, 2px, 2px;
+	text-decoration: none;
+}
+
+.page_bottom a:hover {
+	color: rgb(255,255,255);
+	background-color: rgb(127,127,127);
+}
+
+.page_bottom a.current_page {
+	color: rgb(0,0,0);
+	background-color: rgb(0,255,255);
+}
