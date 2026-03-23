@@ -1,0 +1,1 @@
+This repository contains an HTML version of a [cover letter](./cover-letter.html) and my [resume](./resume.html). It also contains any solutions I've come up with for [LeetCode](./leetcode.html) problems.
