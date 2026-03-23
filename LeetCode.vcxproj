@@ -135,6 +135,7 @@
       <DeploymentContent>false</DeploymentContent>
     </None>
     <None Include="hard\185.sql" />
+    <None Include="index.html" />
     <None Include="leetcode.html" />
     <None Include="resume.html" />
     <None Include="style.css" />

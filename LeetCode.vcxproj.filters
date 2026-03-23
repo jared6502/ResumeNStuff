@@ -42,6 +42,7 @@
     <None Include="hard\185.sql">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="index.html" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="diamond.png">
