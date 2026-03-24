@@ -29,17 +29,23 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 */
 
-#include <stdio.h>
+#include <stdlib.h>
 
-extern bool isPalindrome(int);
+int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
+	for (int i = 0; i < numsSize; i++)
+	{
+		for (int j = numsSize - 1; j > i; j--)
+		{
+			if (nums[i] + nums[j] == target)
+			{
+				*returnSize = 2;
+				int* result = (int *)(malloc(2 * sizeof(int)));
+				result[0] = i;
+				result[1] = j;
+				return result;
+			}
+		}
+	}
 
-int main(int argc, char** argv)
-{
-	//solveSudoku(testboard2, 0, 0);
-	printf("%i: %i\n", 121, isPalindrome(121));
-	//printf("%i: %i\n", -121, isPalindrome(-121));
-	//printf("%i: %i\n", 10, isPalindrome(10));
-	//printf("%i: %i\n", 100021, isPalindrome(100021));
-	printf("%i: %i\n", 100, isPalindrome(100));
 	return 0;
 }

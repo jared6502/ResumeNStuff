@@ -29,17 +29,40 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 */
 
-#include <stdio.h>
+#include <math.h>
 
-extern bool isPalindrome(int);
-
-int main(int argc, char** argv)
+bool isPalindrome(int x)
 {
-	//solveSudoku(testboard2, 0, 0);
-	printf("%i: %i\n", 121, isPalindrome(121));
-	//printf("%i: %i\n", -121, isPalindrome(-121));
-	//printf("%i: %i\n", 10, isPalindrome(10));
-	//printf("%i: %i\n", 100021, isPalindrome(100021));
-	printf("%i: %i\n", 100, isPalindrome(100));
-	return 0;
+	//short-circuit here to save time
+	if (x < 0) return false;
+	if (x < 10) return true;
+	if (x < 100 && (x % 10) != (x / 10)) return false;
+
+	//get width in digits
+	int width = (int)(floor(log10(x)) + 1);
+	int tmp = x;
+	int lodigit;
+	int hidigit;
+	int divisor1;
+	int divisor2;
+	int divisor3;
+	int digit1;
+	int digit2;
+	int digits_to_check = (width >> 1) + ((width & 1) ? 1 : 0);
+
+	for (int i = 0; i < digits_to_check; i++)
+	{
+		divisor1 = (int)(pow(10, width - i - 1));
+		divisor2 = (int)(pow(10, i));
+
+		digit1 = (x / divisor1) % 10;
+		digit2 = (x / divisor2) % 10;
+
+		if (digit1 != digit2)
+		{
+			return false;
+		}
+	}
+
+	return true;
 }

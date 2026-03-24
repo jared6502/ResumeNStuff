@@ -123,6 +123,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="easy\1.cpp" />
+    <ClCompile Include="easy\9.cpp" />
     <ClCompile Include="hard\32.cpp" />
     <ClCompile Include="hard\37.cpp" />
     <ClCompile Include="hard\4.cpp" />
