@@ -130,6 +130,7 @@
     <ClCompile Include="hard\4.cpp" />
     <ClCompile Include="hard\42.cpp" />
     <ClCompile Include="hard\65.cpp" />
+    <ClCompile Include="medium\2.cpp" />
     <ClCompile Include="tests.cpp" />
   </ItemGroup>
   <ItemGroup>
