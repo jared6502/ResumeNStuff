@@ -45,6 +45,9 @@
     <ClCompile Include="hard\41.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="easy\66.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="style.css" />

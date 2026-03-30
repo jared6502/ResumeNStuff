@@ -29,12 +29,28 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 */
 
-#include <stdio.h>
+#include <stdlib.h>
 
-int* plusOne(int* digits, int digitsSize, int* returnSize);
-
-int main(int argc, char** argv)
+int* plusOne(int* digits, int digitsSize, int* returnSize)
 {
+	int tmp = 1;
 
-	return 0;
+	for (int i = digitsSize - 1; i >= 0; i--)
+	{
+		tmp = digits[i] + tmp;
+		digits[i] = tmp % 10;
+		tmp /= 10;
+	}
+
+	*returnSize = digitsSize + (tmp ? 1 : 0);
+
+	int* result = (int*)(malloc(sizeof(int) * (*returnSize)));
+
+	for (int i = 0; i < digitsSize; i++)
+	{
+		result[i + (tmp ? 1 : 0)] = digits[i];
+	}
+
+	if (tmp) result[0] = 1;
+	return result;
 }
