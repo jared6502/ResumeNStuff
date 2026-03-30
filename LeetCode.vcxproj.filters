@@ -33,6 +33,18 @@
     <ClCompile Include="hard\42.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="easy\1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="easy\9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="medium\2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hard\41.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="style.css" />
