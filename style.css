@@ -236,6 +236,7 @@ page content formatting
 }
 
 .content table {
+	width: 100%;
 	border: 2px solid rgb(0,127,127);
 	padding: 4px, 4px, 4px, 4px;
 }
@@ -246,10 +247,36 @@ page content formatting
 	padding: 4px, 4px, 4px, 4px;
 }
 
+.content table th {
+	text-align: center;
+	border: 2px solid rgb(0,127,127);
+	padding: 4px, 4px, 4px, 4px;
+}
+
 .content table td {
 	text-align: left;
 	border: 2px solid rgb(127,127,0);
 	padding: 4px, 4px, 4px, 4px;
+}
+
+.content table col.lc_problem {
+	width: 15%;
+}
+
+.content table col.lc_link {
+	width: 10%;
+}
+
+.content table col.lc_desc {
+	width: 20%;
+}
+
+.content table col.lc_rating {
+	width: 5%;
+}
+
+.content table col.lc_opinion {
+	width: 100%;
 }
 
 .table_of_contents {

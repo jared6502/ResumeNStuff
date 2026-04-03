@@ -104,6 +104,13 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 						<section id="easy">
 							<h2>Easy</h2>
 							<table>
+								<colgroup>
+									<col class="lc_problem" span="1" />
+									<col class="lc_link" span="1" />
+									<col class="lc_desc" span="1" />
+									<col class="lc_rating" span="1" />
+									<col class="lc_opinion" span="1" />
+								</colgroup>
 								<tr><th>Problem</th><th>Solution</th><th>Description</th><th>My Difficulty Rating</th><th>My Opinion</th></tr>
 								<tr><td>1. Two Sum</td><td><a href="easy/1.cpp">1.cpp</a></td><td>Find the indices of two numbers that add up to the given target number.</td><td>1/10</td><td>Easy, iterate over the array until you find two numbers that add to the target value.</td></tr>
 								<tr><td>9. Palindrome Number</td><td><a href="easy/9.cpp">9.cpp</a></td><td>Return a value indicating whether or not a number is a palindrome.</td><td>4/10</td><td>I opted to not perform a string conversion, which made this take longer than it otherwise would have.</td></tr>
@@ -113,6 +120,13 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 						<section id="medium">
 							<h2>Medium</h2>
 							<table>
+								<colgroup>
+									<col class="lc_problem" span="1" />
+									<col class="lc_link" span="1" />
+									<col class="lc_desc" span="1" />
+									<col class="lc_rating" span="1" />
+									<col class="lc_opinion" span="1" />
+								</colgroup>
 								<tr><th>Problem</th><th>Solution</th><th>Description</th><th>My Difficulty Rating</th><th>My Opinion</th></tr>
 								<tr><td>2. Add Two Numbers</td><td><a href="medium/2.cpp">2.cpp</a></td><td>Add two numbers where each digit is stored in a linked list, return result as a linked list</td><td>2/10</td><td>Other than a misleading error message that was caused by not initializing a variable, this took only a few minutes to make a working solution. The numbers being in a linked list makes this easy, since accounting for a potential carry out at the end just requires allocating another list element to contain it.</td></tr>
 							</table>
@@ -120,6 +134,13 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 						<section id="hard">
 							<h2>Hard</h2>
 							<table>
+								<colgroup>
+									<col class="lc_problem" span="1" />
+									<col class="lc_link" span="1" />
+									<col class="lc_desc" span="1" />
+									<col class="lc_rating" span="1" />
+									<col class="lc_opinion" span="1" />
+								</colgroup>
 								<tr><th>Problem</th><th>Solution</th><th>Description</th><th>My Difficulty Rating</th><th>My Opinion</th></tr>
 								<tr><td>4. Median of Two Sorted Arrays</td><td><a href="hard/4.cpp">4.cpp</a></td><td>Find the median value of two sorted lists of numbers.</td><td>7/10</td><td>I spent time trying to do this without actually merging the lists, and it can be done, but I eventually just gave up and created a new list from the originals, which was way easier.</td></tr>
 								<tr><td>32. Longest Valid Parentheses</td><td><a href="hard/32.cpp">32.cpp</a></td><td>Find the longest substring containing valid sets of matched opening and closing parentheses.</td><td>9/10</td><td>I had a harder time with this than I thought I would. While this solution works it just barely completes within the time limit. It could be optimized but I really don't want to spend any more time on it.</td></tr>
