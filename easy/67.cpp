@@ -29,20 +29,61 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 */
 
-#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
-char* addBinary(char* a, char* b);
-
-int main(int argc, char** argv)
+char* addBinary(char* a, char* b)
 {
-	char test1A[] = { '1', '0', '1', '0', '\0' };
-	char test1B[] = { '1', '0', '1', '1', '\0' };
-	char test2A[] = { '1', '1', '\0' };
-	char test2B[] = { '1', '\0' };
-	char test3A[] = { '0', '\0' };
-	char test3B[] = { '0', '\0' };
-	//printf("%s\n", addBinary(test1A, test1B));
-	//printf("%s\n", addBinary(test2A, test2B));
-	printf("%s\n", addBinary(test3A, test3B));
-	return 0;
+	int lenA = 0;
+	int lenB = 0;
+	char* result;
+	char output[10001];
+
+	while (a[lenA] != '\0')
+	{
+		lenA++;
+	}
+	while (b[lenB] != '\0')
+	{
+		lenB++;
+	}
+
+	int an = 0;
+	int bn = 0;
+	int cn;
+	int bitlen;
+
+	for (int i = 0; i < lenA; i++)
+	{
+		if (a[lenA - i - 1] == '1')
+		{
+			an |= (1 << i);
+		}
+	}
+	for (int i = 0; i < lenB; i++)
+	{
+		if (b[lenB - i - 1] == '1')
+		{
+			bn |= (1 << i);
+		}
+	}
+
+	cn = an + bn;
+	if (cn == 0)
+	{
+		bitlen = 1;
+	}
+	else
+	{
+		bitlen = (int)(floor(log2(cn)) + 1);
+	}
+
+	result = (char*)(malloc((bitlen + 1) * sizeof(char)));
+	result[bitlen] = '\0';
+	for (int i = bitlen - 1; i >= 0; i--)
+	{
+		result[bitlen - 1 - i] = (cn & (1 << i)) ? '1' : '0';
+	}
+
+	return result;
 }

@@ -48,6 +48,9 @@
     <ClCompile Include="easy\66.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="easy\67.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="style.css" />
@@ -67,6 +70,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="me.jpeg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="favicon.ico">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

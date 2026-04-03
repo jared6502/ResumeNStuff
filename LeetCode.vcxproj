@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="easy\1.cpp" />
     <ClCompile Include="easy\66.cpp" />
+    <ClCompile Include="easy\67.cpp" />
     <ClCompile Include="easy\9.cpp" />
     <ClCompile Include="hard\32.cpp" />
     <ClCompile Include="hard\37.cpp" />
@@ -147,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="diamond.png" />
+    <Image Include="favicon.ico" />
     <Image Include="hollow_diamond.png" />
     <Image Include="me.jpeg" />
   </ItemGroup>
